@@ -1,25 +1,24 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "${group}",
-		"id": "example_mod",
+		"group": "io.github.h3iyeung",
+		"id": "lamp",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Lamp",
+			"description": "Happy Birthday",
 			"contributors": {
-				"Your name here": "Owner"
+				"Your name here": "Gabriel"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://lh3.googleusercontent.com/chat_attachment/AHsQIIAhgdgJft5REDYdfihxzpIVOZh3u1nFNywCCLPtk1C7MzJ4Okj5f5yDV-YF8kOp-5EXR0bzzEH2647xlruIfUzl9t-g8DkLGB05kwBSY8KOjl9_xEDlqYYuhUXHbpRAfctlYNF0epswKg9QdrlGByxflctGCyMCCQre62Wql-0J2OwUT1gHWvf3Cd1KvcT0pQ3p_k9sDJ2V3o26O78n0_LI2QGj7Z8j6YwzYmhcnTJ2YT_DqqDJ6crOPl8XjcBTqR0_-ZHLXnlwZvKwFM9YmuJXD17xhlxiOXyojsmt1_AIxT-BZSPjy6PaqXFqKw=w2560-h1307"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/lamp/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "io.github.h3iyeung.Lamp",
+			"client": "io.github.h3iyeung.LampClient"
 		},
 		"depends": [
 			{
@@ -36,5 +35,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "lamp.mixins.json"
 }
