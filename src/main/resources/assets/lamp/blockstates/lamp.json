@@ -1,7 +1,9 @@
 {
   "variants": {
-    "": {
-      "model": "lamp:block/lamp"
-    }
+    "facing=north":  { "model": "lamp:block/lamp", "y":  90, "uvlock": false },
+    "facing=west": { "model": "lamp:block/lamp", "uvlock": false },
+    "facing=south": { "model": "lamp:block/lamp", "y": 270, "uvlock": false },
+    "facing=east":  { "model": "lamp:block/lamp", "y": 180, "uvlock": false }
   }
 }
+
