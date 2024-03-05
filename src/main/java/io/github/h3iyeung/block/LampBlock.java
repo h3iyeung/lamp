@@ -9,6 +9,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
 public class LampBlock extends HorizontalFacingBlock {
@@ -31,7 +32,14 @@ public class LampBlock extends HorizontalFacingBlock {
 		);
 	}
 
-
+	@Override
+	public BlockState getStateForNeighborUpdate(
+		BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos
+	) {
+		return direction == Direction.DOWN && !this.canPlaceAt(state, world, pos)
+			? Blocks.AIR.getDefaultState()
+			: super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+	}
 
 	@Override
 	public BlockState getPlacementState(ItemPlacementContext ctx) {
