@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WRW",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "tag": "minecraft:small_flowers"
+    },
+    "R": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "item": "lamp:lamp",
+    "count": 1
+  }
+}
+

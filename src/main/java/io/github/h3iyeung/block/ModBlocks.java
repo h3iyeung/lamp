@@ -18,7 +18,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 public class ModBlocks {
 
 	public static final Block LAMP = registerBlock("lamp",
-		new LampBlock(QuiltBlockSettings.copyOf(Blocks.LANTERN).nonSolid().mapColor(MapColor.RED).strength(1.0f).luminance(state -> 14).nonOpaque()));
+		new LampBlock(QuiltBlockSettings.copyOf(Blocks.LANTERN).nonSolid().mapColor(MapColor.RED).strength(1.0f).luminance(state -> 14).nonOpaque().requiresTool(false)));
 
 
 	private static Block registerBlock(String name, Block block){
